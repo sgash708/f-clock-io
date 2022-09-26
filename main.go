@@ -1,10 +1,6 @@
-/*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
-
-*/
 package main
 
-import "github/sgash708/freee-clock-up/cmd"
+import "github.com/sgash708/f-clock-io/cmd"
 
 func main() {
 	cmd.Execute()
