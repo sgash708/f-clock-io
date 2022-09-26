@@ -8,7 +8,7 @@ import (
 
 var startbreakCmd = &cobra.Command{
 	Use:   "startbreak",
-	Short: "startbreak",
+	Short: "start break",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

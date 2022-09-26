@@ -9,7 +9,9 @@ var clockinCmd = &cobra.Command{
 	Use:   "clockin",
 	Short: "clock in a certain site",
 	Run: func(cmd *cobra.Command, args []string) {
-		application.RunClockIn()
+		if err := application.RunClockIn(); err != nil {
+			panic(err)
+		}
 	},
 }
 

@@ -8,7 +8,7 @@ import (
 
 var clockoutCmd = &cobra.Command{
 	Use:   "clockout",
-	Short: "clockout",
+	Short: "clock out",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

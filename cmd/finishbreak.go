@@ -8,7 +8,7 @@ import (
 
 var finishbreakCmd = &cobra.Command{
 	Use:   "finishbreak",
-	Short: "finishbreak",
+	Short: "finish break",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

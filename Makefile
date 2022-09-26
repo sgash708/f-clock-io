@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	go build -o ./bin/fcio
+	go build -o ./bin/fcio cmd/f-clock-io/main.go
 
 .PHONY: run-io
 run-io:
