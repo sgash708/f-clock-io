@@ -15,8 +15,8 @@ var driver *agouti.WebDriver
 func StartDriver(url string) *agouti.WebDriver {
 	driver = agouti.ChromeDriver(
 		agouti.ChromeOptions("args", []string{
-			// "--disable-gpu",
-			// "--headless",
+			"--disable-gpu",
+			"--headless",
 			"--start-maximized",
 		}),
 	)
@@ -30,7 +30,8 @@ func StartDriver(url string) *agouti.WebDriver {
 		log.Fatalf("Chromeでページが開けません\n詳細: %v", err)
 	}
 
-	if err := page.Session().SetImplicitWait(10); err != nil {
+	// wait 1000 ms
+	if err := page.Session().SetImplicitWait(1000); err != nil {
 		log.Fatalln(err)
 	}
 

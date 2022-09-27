@@ -11,4 +11,5 @@ type secret struct {
 	UserID   string `env:"UserID" envDefault:"1111111"`
 	Email    string `env:"Email" envDefault:"example@email.com"`
 	Password string `env:"Password" envDefault:"your_nice_password"`
+	Memo     string `env:"Memo" envDefault:"your_nice_memo"`
 }

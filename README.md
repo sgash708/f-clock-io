@@ -5,8 +5,7 @@ automate clock in/out for a certain site....
 ## TODO
 
 ```:bash
-cp config.sample.yml config.yml
-vi config.yml
+make cpcfg
 ```
 
 ## Require
@@ -25,4 +24,11 @@ https://chromedriver.chromium.org/downloads
 ### mac
 ```:bash
 brew install chromedriver
+```
+
+## Run
+```go
+make m-build
+go install ./bin/fcio
+fcio clockin
 ```
