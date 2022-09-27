@@ -26,11 +26,6 @@ gobuild:
 m-gobuild:
 	go build -o ./bin/fcio cmd/f-clock-io/main.go
 
-.PHONY: cpcfg
-cpcfg:
-	cp config.sample.yml config.yml
-	cp config.yml ./bin/config.yml
-
 .PHONY: run-in
 run-in:
 	go run cmd/f-clock-io/main.go clockin
