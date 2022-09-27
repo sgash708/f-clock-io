@@ -20,7 +20,7 @@ exec:
 
 .PHONY: gobuild
 gobuild:
-	env GOARCH=amd64 GOOS=linux go build -ldflags="-s -w" -o ./bin/fcio cmd/f-clock-io/main.go
+	GOOS=linux go build -ldflags="-s -w" -o ./bin/fcio cmd/f-clock-io/main.go
 
 .PHONY: m-gobuild
 m-gobuild:
