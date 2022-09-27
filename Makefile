@@ -1,9 +1,29 @@
 .PHONY: build
 build:
+	docker-compose build
+
+.PHONY: up
+up:
+	docker-compose up
+
+.PHONY: upd
+upd:
+	docker-compose up -d
+
+.PHONY: down
+down:
+	docker-compose down
+
+.PHONY: exec
+exec:
+	docker-compose exec sgo bash
+
+.PHONY: gobuild
+gobuild:
 	env GOARCH=amd64 GOOS=linux go build -ldflags="-s -w" -o ./bin/fcio cmd/f-clock-io/main.go
 
-.PHONY: m-build
-m-build:
+.PHONY: m-gobuild
+m-gobuild:
 	go build -o ./bin/fcio cmd/f-clock-io/main.go
 
 .PHONY: cpcfg
