@@ -20,7 +20,6 @@ mv chromedriver /usr/local/bin/
 
 https://chromedriver.chromium.org/downloads
 
-
 ### mac
 ```:bash
 brew install chromedriver
