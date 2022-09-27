@@ -26,6 +26,9 @@ brew install chromedriver
 ```
 
 ## Run
+
+To run `fcio` binaries, you need `config.yml` in the same directory.
+
 ```go
 make m-build
 go install ./bin/fcio
