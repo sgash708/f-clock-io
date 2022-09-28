@@ -62,9 +62,9 @@ $ wget https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv
 $ crontab -e
 
 # clockin
-00 8 * * 1-5 bash -c "sleep $((RANDOM % 1800))s"; grep `date "+%Y/%-m/%-d"`, syukujitsu.csv > /dev/null || ./fcio clockin
+00 8 * * 1-5 bash -c "sleep $((RANDOM \% 1800))s"; grep `date "+\%Y/\%-m/\%-d"`, syukujitsu.csv > /dev/null || ./fcio clockin
 # clockout
-00 18 * * 1-5 bash -c "sleep $((RANDOM % 1800))s"; grep `date "+%Y/%-m/%-d"`, syukujitsu.csv > /dev/null || ./fcio clockout
+00 18 * * 1-5 bash -c "sleep $((RANDOM \% 1800))s"; grep `date "+\%Y/\%-m/\%-d"`, syukujitsu.csv > /dev/null || ./fcio clockout
 # startbreak
 58 11 * * 1-5 ./fcio startbreak
 # finishbreak
